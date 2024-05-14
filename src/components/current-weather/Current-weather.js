@@ -10,7 +10,7 @@ import ThunderstormsIcon from './pictures/Thunderstorms.png';
 import FoggyIcon from './pictures/Foggy.png';
 import WindyIcon from './pictures/Windy.png';
 import SunnyIcon from './pictures/Sunny.png';
-
+import PartlyCloudyicon from './pictures/Partly Cloudy.png'
 
 
 
@@ -34,7 +34,8 @@ const weatherIcons = {
   "Showers": ShowersIcon,
   "Thunderstorms": ThunderstormsIcon,
   "Foggy": FoggyIcon,
-  "Windy": WindyIcon
+  "Windy": WindyIcon,
+  "Partly Cloudy": PartlyCloudyicon
 };
 
 
