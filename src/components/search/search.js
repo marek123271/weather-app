@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import CurrentWeather from "../current-weather/Current-weather.js"; // Import CurrentWeather component
+import Forecast from "../forecast/forecast.js"; // Import Forecast component
 
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
   const [weatherData, setWeatherData] = useState(null); // State to store weather data
+  const [forecastData, setforecastData] = useState(null);
 
   const loadOptions = async (inputValue) => {
     try {
@@ -56,6 +58,7 @@ const Search = ({ onSearchChange }) => {
       
       // Set weather data in state
       setWeatherData(responseData);
+      setforecastData(responseData)
   
     } catch (error) {
       console.error(error);
@@ -71,8 +74,8 @@ const Search = ({ onSearchChange }) => {
         loadOptions={loadOptions}
         onChange={handleOnChange}
       />
-      {weatherData && <CurrentWeather weatherData={weatherData} />} {/* Render CurrentWeather component with weather data */}
-    </>
+      {weatherData && <CurrentWeather weatherData={weatherData} />}
+      {weatherData && <Forecast weatherData={weatherData} />} {/* Pass weatherData as prop */}    </>
   );
 };
 

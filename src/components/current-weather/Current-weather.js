@@ -12,6 +12,8 @@ import WindyIcon from './pictures/Windy.png';
 import SunnyIcon from './pictures/Sunny.png';
 import PartlyCloudyicon from './pictures/Partly Cloudy.png'
 import Fair from './pictures/Fair.png'
+import MostllySunny from './pictures/MostllySunny.png'
+
 
 
 
@@ -37,7 +39,8 @@ const weatherIcons = {
   "Foggy": FoggyIcon,
   "Windy": WindyIcon,
   "Partly Cloudy": PartlyCloudyicon,
-  "Fair": Fair
+  "Fair": Fair,
+  "MostllySunny":MostllySunny
 };
 
 

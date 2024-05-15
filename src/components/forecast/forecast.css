@@ -1,0 +1,55 @@
+.accordion-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between grid items */
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.accordion-header {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 12px; /* Consistent padding */
+    border: 1px solid #ced4da; /* Narrower border */
+    border-radius: 10px; /* Increased border radius */
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    text-align: center; /* Center text inside the header */
+}
+
+.accordion-header:hover {
+    background-color: #e9ecef; /* Darker grey on hover */
+}
+
+.accordion-header:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.accordion-panel {
+    padding: 12px; /* Consistent padding */
+    border: 1px solid #ced4da; /* Narrower border */
+    border-top: none; /* Remove top border */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center; /* Center text inside the panel */
+}
+
+.weather-details {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 10px; /* Padding around the details */
+    border-radius: 8px; /* Border radius */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text inside the details */
+}
+
+.weather-details div {
+    margin-bottom: 6px; /* Spacing between details */
+}
