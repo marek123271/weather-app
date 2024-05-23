@@ -45,7 +45,7 @@ const Search = ({ onSearchChange }) => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '4bec3ea2b0msh2205a9a505a7c28p1a22d0jsn6fab38423ab2',
+        'X-RapidAPI-Key': 'a57279112dmsh0146c93b37a6eabp139cc1jsnb4bedb4a5707',
         'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
       }
     };
